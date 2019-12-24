@@ -10,3 +10,16 @@
 * Forward Compatibility - means that consumer code developed against the previous version of an Avro Schema can consume data using the newest version of a schema without modification.
 * Full Compatibility - means that consumers developed against the latest schema can consume data using the previous schema, and that consumers developed against the previous schema can consume data from the latest schema as well. In other words, full compatibility means that a schema change is both forward and backward compatible.
 * None Compatibility - disables compatibility checking by Schema Registry.
+
+#### Schema Registry - Summary
+* Provides an HTTP REST API for managing Avro schemas
+* Many Kafka clients natively support Schema Registry interactions for you
+* Reduces network overhead, allowing producers and consumers to register schemas one time
+* Simplifies using Avro, reducing the barrier to entry for developers
+* Uses a Kafka topic to store state
+* Deployed as one or more web servers, with one leader
+* Uses ZooKeeper to manage elections
+* Schema Registry - Optional Further Research
+* confluent_kafka_python Avro and Schema Registry support
+* Schema Registry Overview
+* Schema Registry HTTP API Documentation
