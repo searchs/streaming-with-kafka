@@ -1,4 +1,4 @@
-###Glossary of Terms - Kafka EcoSystem
+### Glossary of Terms - Kafka EcoSystem
 * Broker (Kafka) - A single member server of the Kafka cluster
 * Cluster (Kafka) - A group of one or more Kafka Brokers working together to satisfy Kafka production and consumption
 * Node - A single computing instance. May be physical, as in a server in a datacenter, or virtual, as an instance might be in AWS, GCP, or Azure.
