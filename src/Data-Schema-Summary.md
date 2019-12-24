@@ -20,6 +20,6 @@
 * Deployed as one or more web servers, with one leader
 * Uses ZooKeeper to manage elections
 * Schema Registry - Optional Further Research
-* confluent_kafka_python Avro and Schema Registry support
-* Schema Registry Overview
-* Schema Registry HTTP API Documentation
+* confluent_kafka_python [Avro and Schema Registry support](https://docs.confluent.io/current/clients/confluent-kafka-python/index.html?highlight=partition#module-confluent_kafka.avro)
+* [Schema Registry Overview](https://docs.confluent.io/current/schema-registry/index.html)
+* [Schema Registry HTTP API Documentation](https://docs.confluent.io/current/schema-registry/develop/api.html)
