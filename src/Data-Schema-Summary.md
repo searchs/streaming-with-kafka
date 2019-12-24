@@ -50,5 +50,5 @@
 * FULL and FULL_TRANSITIVE compatibility indicate that a schema change is both forward and backward compatible.
 * NONE compatibility means that compatibility is not tracked. Use of NONE is not recommended.
 * Optional Further Research on Schema Evolution and Compatibility
-* Confluent’s Schema Evolution and Compatibility Documentation
-* Avro Schema Resolution Rules for backward compatibility
+* [Confluent’s Schema Evolution and Compatibility Documentation](https://docs.confluent.io/current/schema-registry/avro.html#schema-evolution-and-compatibility)
+* [Avro Schema Resolution Rules for backward compatibility](http://avro.apache.org/docs/1.8.2/spec.html#Schema+Resolution)
