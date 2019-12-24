@@ -25,7 +25,7 @@
 * [Schema Registry HTTP API Documentation](https://docs.confluent.io/current/schema-registry/develop/api.html)
 
 
-#### Schema Compatibility
+#### Schema Compatibility Summary
 * The process of schema change is known as Schema Evolution
 * Schema Evolution is caused by a modification to an existing data schema
 * Adding or removing a field
@@ -40,3 +40,15 @@
 * Full / Full Transitive
 * None
 * Managing compatibility requires both producer and consumer code to determine the compatibility of schema changes and send those updates to Schema Registry
+
+#### Schema Evolution and Compatibility - Summary
+
+* The process of changing the definition of our data schema is known as Schema Evolution.
+* Schema Registry can help keep track of schema changes and their compatibility with existing schemas using its compatibility API.
+* BACKWARD and BACKWARD_TRANSITIVE compatibility indicate that consumers developed against the latest version of the schema can use one or more previous schemas. BACKWARD is the default for Schema Registry.
+* FORWARD and FORWARD_TRANSITIVE compatibility indicate that consumers developed against the previous (or potentially earlier) version of a schema can continue to use data with the latest schema definition.
+* FULL and FULL_TRANSITIVE compatibility indicate that a schema change is both forward and backward compatible.
+* NONE compatibility means that compatibility is not tracked. Use of NONE is not recommended.
+* Optional Further Research on Schema Evolution and Compatibility
+* [Confluent’s Schema Evolution and Compatibility Documentation](https://docs.confluent.io/current/schema-registry/avro.html#schema-evolution-and-compatibility)
+* [Avro Schema Resolution Rules for backward compatibility](http://avro.apache.org/docs/1.8.2/spec.html#Schema+Resolution)
