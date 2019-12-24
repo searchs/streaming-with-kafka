@@ -1,0 +1,12 @@
+{//user schema
+ "type": "record",
+ "name": "user",
+ "namespace": "com.ohprice",
+ "fields": [
+ {"name": "id", "type": "int"},
+ {"name": "first", "type": "string"},
+ {"name": "last", "type": "string"},
+ {"name": "email", "type": "string"},
+ {"name": "phone", "type": ["null","string"]},
+ ]
+}
